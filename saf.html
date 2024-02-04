@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is</title>
+
+    <style>
+        /* Styles for the overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+       
+     /* Styles for the pop-up box */
+        .popup-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+
+    <title>Where should we go?</title>
+    <style>
+        /* Optional: Style the drop-down menu */
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey Ashlé <3!</h1>
+
+    <p>Can I ask you a question?</p>
+
+    <button onclick="openPopup()">Yes</button>
+
+    <div class="overlay" id="overlay">
+        <div class="popup-box">
+            <h2>Are you free on Febuary 15, 2024?</h2>
+            <h4>(please say yes...)</h4>
+            
+            <button onclick="openPopup2()">Yes</button>
+
+            <button onclick="closePopup('overlay')">No</button>
+
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay2">
+        <div class="popup-box">
+            <h2>Would you do me the honor of being My Valentine??</h2>
+            <button onclick="openPopup3()">Yes</button>
+            <button onclick="openPopup4()">Nah I hate you </button>
+        </div>
+    </div>
+    
+
+    <div class="overlay" id="overlay3">
+        <div class="popup-box">
+            <h2>Where should we go?</h2>
+            <select id="dropdownMenu" onchange="showSelectedValue()">
+                <option value="Press Bistro">Press Bistro</option>
+                <option value="Pepper Thyme">Pepper Thyme</option>
+                <option value="Pimentos">Pimentos</option>
+                
+            </select>
+            
+            <!-- Display selected value (optional) -->
+            <p id="selectedValue"></p>
+            
+            
+            <button onclick="closePopup3('overlay3')">Close</button>
+            
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay4">
+        <div class="popup-box">
+            <h2>DAMNNNNN</h2>
+            <button onclick="closePopup4('overlay4')">Close</button>
+        </div>
+    </div>
+    
+
+    <script>
+        // JavaScript functions to open and close the pop-up
+        function openPopup() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function openPopup2() {
+            closePopup('overlay');
+            document.getElementById("overlay2").style.display = "flex";
+        }
+
+        
+        function openPopup3() {
+            closePopup('overlay2');
+            document.getElementById("overlay3").style.display = "flex";
+        }
+
+        
+        function openPopup4() {
+            closePopup('overlay3');
+            document.getElementById("overlay4").style.display = "flex";
+        }
+
+    
+        function closePopup() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function closePopup2() {
+            document.getElementById("overlay2").style.display = "none";
+        }
+
+        function closePopup3() {
+            document.getElementById("overlay3").style.display = "none";
+        }
+
+        function closePopup4() {
+            document.getElementById("overlay4").style.display = "none";
+        }
+
+       
+        function showSelectedValue() {
+            closePopup('overlay3');
+            var selectedValue = document.getElementById("dropdownMenu").value;
+            document.getElementById("selectedValue").innerHTML = "See you at 5pm @ " + selectedValue;
+        }
+
+        
+
+    </script> 
+
+   
+</body>
+</html>
