@@ -1,0 +1,6 @@
+620000,John Brown,Letm3$,876-881-8812,Premium 1,11/10/2023,ACTIVE,3,6,Television_Blender_Fridge_Stove_Microwave_Toaster,1200_3540_6630,11/12/2023,2:00 pm
+320001,John Lenon,Womer123,876-881-9900,Premium 1,19/10/2023,ACTIVE, Television_Air Conditioner_Fridge, 1780_3140_3430,11/12/2023,4:00 pm
+620002,Cory Baxter,MrBeast6000,876-354-2201, Regular 1,18/11/2023,ACTIVE,Fan_Toaster_Television_Microwave,1211_3301_4560_2889,9/12/2021,1:00 pm
+520003,Michelle Owen,sToryTime345,876-456-8888,Regular 2,19/11/2023,ACTIVE,Air Conditioner_Fridge_Toaster_Microwave_Air Fryer_Fan,1256_6421_6333_1255_8321_4021,3/12/2021,1:00 pm
+621004,Ashley Brown,Fann678,876-565-3330,Premium 2,1/10/2023,ACTIVE,Fan_Air Conditioner_Laptop_Air Fryer,2222_6565_2122_4329,2/12/2021,12:00 pm
+520005,Barry Allen,Flash234,876-321-6788,Regular 1,9/11/2023,ACTIVE,Desktop_Air Conditioner_Fridge_Microwave,4444_9081_9020_8706,4/12/2021,12:30 pm
